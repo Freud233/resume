@@ -1,4 +1,4 @@
-//获取元素
+window.onload = function(){//获取元素
 var getElem = function(selector){
 	return document.querySelector(selector);
 }
@@ -188,3 +188,4 @@ for (var i=0;i<navItems.length;i++){
 setTimeout(function(){
 playScreenAnimateDone(".main")
 },1000)
+}
