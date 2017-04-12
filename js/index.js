@@ -97,7 +97,6 @@ var playScreenAnimateDone = function(screenCls){
 }
 var navItems = getAllElem(".nav-item");
 var outLineItems = getAllElem(".outline-item");
-
 var switchNavItemsActive = function(index){
 	for(var i=0;i<navItems.length;i++){
 		delCls(navItems[i],'nav-active')
@@ -136,12 +135,10 @@ window.onscroll = function(){
 		playScreenAnimateDone(".content-build")
 		playScreenAnimateDone(".content-build-sub")
 		switchNavItemsActive(3);
-
 	}
 	if(top>600*4){
 		playScreenAnimateDone(".content-learn")
 		switchNavItemsActive(4);
-
 	}
 }
 //双向定位 
@@ -157,7 +154,6 @@ for(var i=0;i<navItems.length;i++){
 for(var i=0;i<outLineItems.length;i++){
 	setNavJump(i,outLineItems);
 }
-
 //滑动门特效
 var navTip = getElem(".nav-tip")
 var setTip = function(idx,lib){
@@ -188,3 +184,6 @@ for (var i=0;i<navItems.length;i++){
 setTimeout(function(){
 playScreenAnimateDone(".main")
 },1000)
+getElem(".nav-btn").onclick = function (){
+	alert("loading...")
+}
