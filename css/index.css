@@ -82,6 +82,11 @@ a {
 	background-color: red;
 }
 /*第一屏*/
+#c {
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+}
 .main {
 	width: 1200px;
 	height: 640px;
